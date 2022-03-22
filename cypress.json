@@ -1,0 +1,10 @@
+{
+  "testFiles": "**/*.{feature,features}",
+  "env": {
+    "url": "https://www.amazon.com/"
+  },
+  "viewportWidth": 1600,
+  "viewportHeight": 1000,
+  "defaultCommandTimeout": 4000,
+  "pageLoadTimeout": 120000
+}

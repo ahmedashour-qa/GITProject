@@ -1,0 +1,72 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Amazon Search",
+    "line": 1,
+    "id": "amazon-search",
+    "tags": [],
+    "uri": "Search.feature",
+    "elements": [
+      {
+        "id": "amazon-search;check-the-total-displayed-number-of-results-for-category-smart-home-|-televisions",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Check the total displayed number of results for category Smart Home | Televisions",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "User Navigates to Amazon Home Page",
+            "result": {
+              "status": "passed",
+              "duration": 4740000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "User clicks on categories list button",
+            "result": {
+              "status": "passed",
+              "duration": 657000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "User selects category \"Smart Home\"",
+            "result": {
+              "status": "passed",
+              "duration": 3123000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "User selects sub-category category \"Home Entertainment\"",
+            "result": {
+              "status": "failed",
+              "duration": 4618000000,
+              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.hmenu-item`, but never found it.\n    at Home.Sub_Category_List (https://www.amazon.com/__cypress/tests?p=cypress\\integration\\Search.feature:127:17)\n    at Home.ClickOnSubCategoryListItem (https://www.amazon.com/__cypress/tests?p=cypress\\integration\\Search.feature:153:12)\n    at Context.eval (https://www.amazon.com/__cypress/tests?p=cypress\\integration\\Search.feature:372:12)\n    at Context.resolveAndRunStepDefinition (https://www.amazon.com/__cypress/tests?p=cypress\\integration\\Search.feature:10814:29)\n    at Context.eval (https://www.amazon.com/__cypress/tests?p=cypress\\integration\\Search.feature:10135:35)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "User selects sub-category \"Smart Televisions\"",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

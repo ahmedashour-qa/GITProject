@@ -1,0 +1,23 @@
+{
+    "HomePage":{
+        "Categories_List_Btn":"#nav-hamburger-menu",
+        "Categories_List_Items":".hmenu-visible >> .hmenu-item",
+        "Sub_Category_List":".hmenu-item",
+        "TodaysDealLnk":"[href='/gp/goldbox?ref_=nav_cs_gb']",
+        "Language_CurrencyBtn":".icp-nav-link-inner"
+
+    },
+    "Language_CurrencyPage":{
+        "currency_list_picker":"xpath://div[1]/div[2]/div/div/form/div[3]/div/p/span[2]/span/span/span",
+        "currency_list":".a-dropdown-item",
+        "saveChangesBtn":"xpath://*[@id='icp-btn-save']"
+    },
+    "Sub_CategoryPage":{
+        "Sub_Sub_Category":" .bxc-grid__content > .bxc-grid__image > a",
+        "SeeAllResultsBtn":"xpath://span[contains(text(),'See all results')]"
+    },
+    "TodaysDealPage":{
+        "filterList":".CheckboxFilter-module__checkboxLabel_21MUk0e7QdlZKH5Xcwap-F",
+        "PriceSymbol":".a-price-symbol"
+    }
+}

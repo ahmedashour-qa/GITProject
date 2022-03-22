@@ -1,0 +1,62 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Amazon Today's Deal Filter",
+    "line": 1,
+    "id": "amazon-today's-deal-filter",
+    "tags": [],
+    "uri": "Filter.feature",
+    "elements": [
+      {
+        "id": "amazon-today's-deal-filter;check-filter-by-department-in-deals-and-promotions-page",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Check filter by department in Deals and Promotions page",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "User Navigates to Amazon Home Page",
+            "result": {
+              "status": "passed",
+              "duration": 4851000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "User Clicks on Todays Deals",
+            "result": {
+              "status": "passed",
+              "duration": 11218000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "User selects \"Software\"",
+            "result": {
+              "status": "passed",
+              "duration": 1776000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "The selected \"Software\" filter shall be checked",
+            "result": {
+              "status": "passed",
+              "duration": 482000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

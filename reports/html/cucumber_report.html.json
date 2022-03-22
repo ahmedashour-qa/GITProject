@@ -1,0 +1,210 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Amazon currency change",
+    "line": 1,
+    "id": "amazon-currency-change",
+    "tags": [],
+    "uri": "CurrencyChange.feature",
+    "elements": [
+      {
+        "id": "amazon-currency-change;check-the-selected-currency-displayed-for-the-products'-price",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Check the selected currency displayed for the products' price",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "User Navigates to Amazon Home Page",
+            "result": {
+              "status": "passed",
+              "duration": 5220000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "User Clicks on Language & Currency Setup page",
+            "result": {
+              "status": "passed",
+              "duration": 1536000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "User clicks on currency list picker and chooses \"AED - Arab Emirates Dirham\"",
+            "result": {
+              "status": "failed",
+              "duration": 4597000000,
+              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.a-dropdown-item`, but never found it.\n    at CurrencyLanguage.currency_list (https://www.amazon.com/__cypress/tests?p=cypress\\integration\\CurrencyChange.feature:90:17)\n    at CurrencyLanguage.SelectCurrency (https://www.amazon.com/__cypress/tests?p=cypress\\integration\\CurrencyChange.feature:111:12)\n    at Context.eval (https://www.amazon.com/__cypress/tests?p=cypress\\integration\\CurrencyChange.feature:315:24)\n    at Context.resolveAndRunStepDefinition (https://www.amazon.com/__cypress/tests?p=cypress\\integration\\CurrencyChange.feature:10814:29)\n    at Context.eval (https://www.amazon.com/__cypress/tests?p=cypress\\integration\\CurrencyChange.feature:10135:35)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "User clicks on save changes button",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "User Clicks on Todays Deals",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "User should find currency symbol \"AED\" be displayed beside products price at Today Deals page",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "keyword": "Feature",
+    "name": "Amazon Today's Deal Filter",
+    "line": 1,
+    "id": "amazon-today's-deal-filter",
+    "tags": [],
+    "uri": "Filter.feature",
+    "elements": [
+      {
+        "id": "amazon-today's-deal-filter;check-filter-by-department-in-deals-and-promotions-page",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Check filter by department in Deals and Promotions page",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "User Navigates to Amazon Home Page",
+            "result": {
+              "status": "passed",
+              "duration": 4851000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "User Clicks on Todays Deals",
+            "result": {
+              "status": "passed",
+              "duration": 11218000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "User selects \"Software\"",
+            "result": {
+              "status": "passed",
+              "duration": 1776000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "The selected \"Software\" filter shall be checked",
+            "result": {
+              "status": "passed",
+              "duration": 482000000
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "keyword": "Feature",
+    "name": "Amazon Search",
+    "line": 1,
+    "id": "amazon-search",
+    "tags": [],
+    "uri": "Search.feature",
+    "elements": [
+      {
+        "id": "amazon-search;check-the-total-displayed-number-of-results-for-category-smart-home-|-televisions",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Check the total displayed number of results for category Smart Home | Televisions",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "User Navigates to Amazon Home Page",
+            "result": {
+              "status": "passed",
+              "duration": 4740000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "User clicks on categories list button",
+            "result": {
+              "status": "passed",
+              "duration": 657000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "User selects category \"Smart Home\"",
+            "result": {
+              "status": "passed",
+              "duration": 3123000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "User selects sub-category category \"Home Entertainment\"",
+            "result": {
+              "status": "failed",
+              "duration": 4618000000,
+              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.hmenu-item`, but never found it.\n    at Home.Sub_Category_List (https://www.amazon.com/__cypress/tests?p=cypress\\integration\\Search.feature:127:17)\n    at Home.ClickOnSubCategoryListItem (https://www.amazon.com/__cypress/tests?p=cypress\\integration\\Search.feature:153:12)\n    at Context.eval (https://www.amazon.com/__cypress/tests?p=cypress\\integration\\Search.feature:372:12)\n    at Context.resolveAndRunStepDefinition (https://www.amazon.com/__cypress/tests?p=cypress\\integration\\Search.feature:10814:29)\n    at Context.eval (https://www.amazon.com/__cypress/tests?p=cypress\\integration\\Search.feature:10135:35)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "User selects sub-category \"Smart Televisions\"",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
